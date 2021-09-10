@@ -1433,8 +1433,10 @@ border: 1px solid #CE1139;
 }
 
 .portfolio-item .portfolio_img img {
-    width: 100%;
-    height: auto;
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+    /* padding: 2px; */
 }
 
 .portfolio-item:hover .item_overlay {
