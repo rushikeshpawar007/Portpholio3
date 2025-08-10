@@ -1,356 +1,552 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Portfolio | Rushikesh Pawar</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Fontawesome CDN Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <!-- Move to up button -->
-    <div class="scroll-button">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
-    </div>
-    <!-- navgaition menu -->
-    <nav>
-      <div class="navbar">
-        <div class="logo"><a href="#">Portfolio.</a></div>
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
-        </ul>
-        <div class="media-icons">
-          <a href="https://github.com/rushikeshpawar007" target="_blank"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/rushikesh-pawar-261b9215b/"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://www.youtube.com/channel/UCwDu-oDBC9Ue9e54iPmhKfg"
-            target="_blank"
-            ><i class="fab fa-youtube"></i
-          ></a>
-          <a href="mailto:rushikeshpawar197@gmail.com" target="_blank"
-            ><i class="far fa-envelope"></i
-          ></a>
-          <a href="https://rushikeshpawar.hashnode.dev/" target="_blank"
-          <i class="fas fa-blog"></i></a>
-        </div>
-      </div>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
-    </nav>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushikesh Pawar | Data Analyst & BI Specialist</title>
+    <meta name="description" content="Portfolio of Rushikesh Pawar, a Data Analyst & BI Specialist in Berlin, showcasing high-impact projects in Power BI, SQL, Python, and business intelligence.">
+    <meta name="keywords" content="Rushikesh Pawar, Data Analyst, Business Intelligence, Power BI, SQL, Python, Tableau, Berlin, Data Visualization, Financial Analytics">
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <div class="text">
-          <div class="text-one">Hello,</div>
-          <div class="text-two">I'm Rushikesh Pawar</div>
-          <div class="text-three">DATA ANALYST</div>
-          <!-- <div class="text-four">From India</div> -->
-        </div>
-        <div class="button">
-          <p>
-            I am data Enthusiast, who can convert a flat file to an eye catching
-            interactive dashboard!
-          </p>
-        </div>
-      </div>
-    </section>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rushikeshpawar007.github.io/">
+    <meta property="og:title" content="Rushikesh Pawar | Data Analyst & BI Specialist">
+    <meta property="og:description" content="An interactive portfolio showcasing data analytics projects using Power BI, SQL, Python, and Tableau.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/rushikeshpawar007/rushikeshpawar007.github.io/main/social_preview.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rushikeshpawar007.github.io/">
+    <meta property="twitter:title" content="Rushikesh Pawar | Data Analyst & BI Specialist">
+    <meta property="twitter:description" content="An interactive portfolio showcasing data analytics projects using Power BI, SQL, Python, and Tableau.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/rushikeshpawar007/rushikeshpawar007.github.io/main/social_preview.png">
 
-    <!-- About Section Start -->
-    <section class="about" id="about">
-      <div class="content">
-        <div class="title"><span>About Me</span></div>
-        <div class="about-details">
-          <div class="left">
-            <img src="about.jpg" alt="" />
-          </div>
-          <div class="right">
-            <div class="topic">I Create Awesome Dashboard</div>
-            <p>
-              Hi, My name is Rushikesh Pawar. I come from India. Currently I am
-              pursing my Master’s Degree from HTW Berlin. I am a mechanical
-              graduate, who worked for an Industry. Mostly my work was related
-              to data handling which intrigued my curiosity into exploring the
-              exponential dimension of Data analysis using different tools like
-              python and R. During my learning journey I took up a challenge to
-              keep up the pace and be consistent with my work. I took 100 days
-              of code challenge on linked-in, I learnt a lot during. Another
-              think that I Fall in love with was the data visualization part.
-              The first business intelligence tool that I learnt was Tableau. The art of
-              visualization was so intriguing to me that I couldn’t stopped
-              myself from creating different vizzs.
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --background-light: #f8f9fa;
+            --text-light: #212529;
+            --heading-light: #000000;
+            --accent-light: #007bff;
+            --accent-hover-light: #0056b3;
+            --card-bg-light: #ffffff;
+            --card-border-light: #dee2e6;
+
+            --background-dark: #121212;
+            --text-dark: #e9ecef;
+            --heading-dark: #ffffff;
+            --accent-dark: #4dabf7;
+            --accent-hover-dark: #74c0fc;
+            --card-bg-dark: #1e1e1e;
+            --card-border-dark: #343a40;
+        }
+
+        html[data-theme='light'] {
+            --bg-color: var(--background-light);
+            --text-color: var(--text-light);
+            --heading-color: var(--heading-light);
+            --accent-color: var(--accent-light);
+            --accent-hover: var(--accent-hover-light);
+            --card-bg: var(--card-bg-light);
+            --card-border: var(--card-border-light);
+        }
+
+        html[data-theme='dark'] {
+            --bg-color: var(--background-dark);
+            --text-color: var(--text-dark);
+            --heading-color: var(--heading-dark);
+            --accent-color: var(--accent-dark);
+            --accent-hover: var(--accent-hover-dark);
+            --card-bg: var(--card-bg-dark);
+            --card-border: var(--card-border-dark);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        h1, h2, h3, h4, h5, h6 { color: var(--heading-color); font-weight: 700; }
+        .accent-text { color: var(--accent-color); }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        .btn-secondary:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        
+        .section-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+        }
+
+        .header-scrolled {
+            background-color: rgba(var(--card-bg-rgb), 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        html[data-theme='light'] .header-scrolled { --card-bg-rgb: 255, 255, 255; }
+        html[data-theme='dark'] .header-scrolled { --card-bg-rgb: 30, 30, 30; }
+
+        /* Timeline */
+        .timeline { position: relative; }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: var(--card-border);
+            transform: translateX(-50%);
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 1.25rem;
+            top: 0.5rem;
+            height: 1.25rem;
+            width: 1.25rem;
+            border-radius: 9999px;
+            background-color: var(--accent-color);
+            border: 4px solid var(--bg-color);
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            max-width: 90%;
+            width: 700px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-color);
+        }
+
+        /* Dark/Light mode toggle icons */
+        #theme-icon-light { display: none; }
+        #theme-icon-dark { display: block; }
+        html[data-theme='dark'] #theme-icon-light { display: block; }
+        html[data-theme='dark'] #theme-icon-dark { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header id="main-header" class="sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-inherit">Rushikesh Pawar</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="font-medium hover:text-[var(--accent-color)] transition-colors">About</a>
+                <a href="#skills" class="font-medium hover:text-[var(--accent-color)] transition-colors">Skills</a>
+                <a href="#experience" class="font-medium hover:text-[var(--accent-color)] transition-colors">Experience</a>
+                <a href="#projects" class="font-medium hover:text-[var(--accent-color)] transition-colors">Projects</a>
+                <a href="#contact" class="font-medium hover:text-[var(--accent-color)] transition-colors">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                 <button id="theme-toggle" aria-label="Toggle theme" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[var(--card-border)] transition-colors">
+                    <i id="theme-icon-light" class="fas fa-sun text-xl"></i>
+                    <i id="theme-icon-dark" class="fas fa-moon text-xl"></i>
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-[var(--card-bg)] border-t border-[var(--card-border)]">
+            <a href="#about" class="block text-center py-3 px-6 hover:bg-[var(--card-border)] transition-colors">About</a>
+            <a href="#skills" class="block text-center py-3 px-6 hover:bg-[var(--card-border)] transition-colors">Skills</a>
+            <a href="#experience" class="block text-center py-3 px-6 hover:bg-[var(--card-border)] transition-colors">Experience</a>
+            <a href="#projects" class="block text-center py-3 px-6 hover:bg-[var(--card-border)] transition-colors">Projects</a>
+            <a href="#contact" class="block text-center py-3 px-6 hover:bg-[var(--card-border)] transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="hero" class="text-center py-20">
+            <img src="profile.png" alt="Profile picture of Rushikesh Pawar" class="w-40 h-40 rounded-full mx-auto mb-6 ring-4 ring-[var(--accent-color)] shadow-lg">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Rushikesh Pawar</h1>
+            <h2 class="text-2xl md:text-3xl font-medium accent-text mb-6">Data Analyst & BI Specialist</h2>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl mb-10">
+                I transform complex data into clear, actionable insights. With expertise in Power BI, SQL, and Python, I build data solutions that drive business strategy and financial performance.
             </p>
-            <div class="button">
-              <a href="https://drive.google.com/file/d/1dlFOtqFZCUsy_z_sdDbUaWCWnNq4llIM/view?usp=share_link" target="_blank"><button>My Resume</button></a>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#projects" class="btn-primary w-full sm:w-auto">View My Work</a>
+                <a href="https://drive.google.com/file/d/1dlFOtqFZCUsy_z_sdDbUaWCWnNq4llIM/view?usp=share_link" target="_blank" rel="noopener noreferrer" class="btn-secondary w-full sm:w-auto">View Resume</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-
-<!-- Work Experience Section Start -->
-<section class="work-experience" id="work-experience">
-  <div class="content">
-    <div class="title"><span>Work Experience</span></div>
-    <div class="work-details">
-      <div class="work-card">
-        <div class="work-card-image">
-          <img src="KPMG_logo_PNG1.png" alt="">
-        </div>
-        <div class="work-card-content">
-          <div class="work-card-title">
-            Werkstudent Data Analytics / Data Science
-          </div>
-          <div class="work-card-details">
-            <div class="work-card-company">CARIAD SE - Volkswagen group</div>
-            <div class="work-card-duration">September - present</div>
-            <p>
-              Collaborated with colleagues from different areas (Product Managers, Cloud Architects, Data Engineers, etc.) to translate business requirements into data-driven solutions.
-              Performed data analysis of Sales data of different car models from VW group using various tools like Athena(SQL), Power BI.
-              Developed operational dashboards to support business decisions and helped data engineers and data scientists with various analysis.
-              Fulfilled the gap between the business and the IT team.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="work-card">
-        <div class="work-card-image">
-          <img src="work-image-2.jpg" alt="">
-        </div>
-        <div class="work-card-content">
-          <div class="work-card-title">
-            Werkstudent Data Analytics / Data Science
-          </div>
-          <div class="work-card-details">
-            <div class="work-card-company">KPMG Deutschland - Zeugnis</div>
-            <div class="work-card-duration">March-August</div>
-            <p>
-              Performed data analysis of SAP authorization data using SQL server as per client’s requirement.
-              Automated data processing using Python, for example, automatic name change of column headers and upload data to a database.
-              Part of a sprint team in an agile method for the development of Qlik Sense dashboard.
-              Optimized the performance of Qlik sense dashboard using load script.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  
-    <!-- My Skill Section Start -->
-    <!-- Section Tag and Other Div will same where we need to put same CSS -->
-    <section class="skills" id="skills">
-      <div class="content">
-        <div class="title"><span>My Skills</span></div>
-        <div class="skills-details">
-          <div class="text">
-            <div class="topic">Skills Reflects Our Knowledge</div>
-            <p>
-              Designed/Implemented real-time monitoring Dashboards for Tableau
-              Server & Visualization users. Prepared a claim data for risk
-              adjustment by extracting, cleaning, and merging from different
-              tables using SQL. Built and maintained SQL scripts, indexes, and
-              complex queries for data analysis and extraction for varies
-              projects. Utilized python pandas, Numpy, Matplotlib Libraries for
-              analysing dataset and visualizing key full insights.
-            </p>
-            <!-- <div class="experience">
-              <div class="num">1</div>
-              <div class="exp">
-                Years Of <br />
-                Experience
-              </div>
-            </div> -->
-          </div>
-          <div class="boxes">
-            <div class="box">
-              <div class="topic">Python</div>
-              <div class="per">90%</div>
+        <section id="about" class="py-24">
+             <div class="section-card">
+                <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+                <div class="grid md:grid-cols-5 gap-12 items-center">
+                    <div class="md:col-span-3 text-lg leading-relaxed">
+                        <p>
+                            Hello! I'm Rushikesh, a Berlin-based Business & Data Analyst currently helping drive financial strategy at <strong>Lecturio GmbH</strong>. My journey into data began during my Mechanical Engineering degree, where I discovered a passion for uncovering the stories hidden within numbers.
+                        </p>
+                        <br>
+                        <p>
+                            This curiosity led me to pursue a Master's in Business Administration & Engineering, blending technical skills with management strategy. I thrive on the challenge of translating raw data into compelling visualizations and automated reports that empower teams to make smarter, faster decisions. Whether it's building an executive dashboard in Power BI or automating a workflow with n8n, my goal is always to deliver clarity and impact.
+                        </p>
+                    </div>
+                     <div class="md:col-span-2 bg-[var(--bg-color)] p-6 rounded-lg border border-[var(--card-border)]">
+                        <h3 class="text-xl font-bold mb-4">Core Competencies</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center"><i class="fa-solid fa-chart-pie w-6 accent-text"></i>Business Intelligence & Reporting</li>
+                            <li class="flex items-center"><i class="fa-solid fa-database w-6 accent-text"></i>SQL & Data Modeling</li>
+                            <li class="flex items-center"><i class="fa-brands fa-python w-6 accent-text"></i>Python for Data Automation</li>
+                            <li class="flex items-center"><i class="fa-solid fa-chart-line w-6 accent-text"></i>Financial & Sales Analytics</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-              <div class="topic">SQL</div>
-              <div class="per">85%</div>
+        </section>
+
+        <section id="skills" class="py-24">
+            <h2 class="text-4xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
+                </div>
+        </section>
+
+        <section id="experience" class="py-24">
+            <h2 class="text-4xl font-bold text-center mb-16">Career Journey</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline space-y-12">
+                    <div class="timeline-item relative pl-12">
+                        <h3 class="text-2xl font-bold">Business/Data Analyst</h3>
+                        <p class="accent-text font-semibold text-lg my-1">Lecturio GmbH</p>
+                        <p class="text-sm opacity-70 mb-4">Sept 2023 – Present</p>
+                        <ul class="list-disc list-outside space-y-2 pl-5">
+                            <li>Developed and automated a suite of Power BI dashboards for financial and sales reporting, reducing manual effort by over <strong>40%</strong> and providing real-time KPI tracking for C-level executives.</li>
+                            <li>Engineered solutions connecting Salesforce and data warehouse sources to monitor key metrics like Net Operating Income (NOI), budget vs. actuals, and sales funnel health.</li>
+                            <li>Manage quarterly royalty payouts to authors by analyzing usage data across multiple business units, ensuring accurate and timely compensation.</li>
+                        </ul>
+                    </div>
+                     <div class="timeline-item relative pl-12">
+                        <h3 class="text-2xl font-bold">Werkstudent Data Analytics / Data Science</h3>
+                        <p class="accent-text font-semibold text-lg my-1">CARIAD SE - Volkswagen group</p>
+                        <p class="text-sm opacity-70 mb-4">Sept 2022 – Aug 2023</p>
+                        <ul class="list-disc list-outside space-y-2 pl-5">
+                             <li>Centralized reporting by querying data with <strong>AWS Athena (SQL)</strong> and building unified Power BI dashboards, leading to a <strong>25% faster</strong> response time to business queries.</li>
+                             <li>Defined and tracked key performance indicators (KPIs) for various projects, enhancing data-driven decision-making across teams.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item relative pl-12">
+                        <h3 class="text-2xl font-bold">Werkstudent Data Analytics / Data Science</h3>
+                        <p class="accent-text font-semibold text-lg my-1">KPMG Deutschland</p>
+                        <p class="text-sm opacity-70 mb-4">Mar 2022 – Aug 2022</p>
+                        <ul class="list-disc list-outside space-y-2 pl-5">
+                             <li>Improved Qlik Sense dashboard performance by <strong>50%</strong> by optimizing data models and load scripts.</li>
+                             <li>Automated data processing tasks for large SAP authorization datasets using <strong>Python</strong> and analyzed results with <strong>SQL Server</strong> to support audit processes.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-              <div class="topic">Tableau</div>
-              <div class="per">85%</div>
+        </section>
+        
+        <section id="projects" class="py-24">
+            <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
+            <div id="project-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </section>
+
+        <section id="certifications" class="py-24">
+            <h2 class="text-4xl font-bold text-center mb-12">Certifications</h2>
+            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
+                <a href="https://drive.google.com/file/d/1zWBZDnMuiKehHhP_uWX7pVWObOEtuwBC/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-secondary">Google Data Analytics</a>
+                <a href="https://drive.google.com/file/d/1WKw3hjShdDCC-Sho-uJq_jn-V8kqP3wq/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-secondary">SQL</a>
+                <a href="https://drive.google.com/file/d/1yTXY2LCsGzr7CBaqN_oQID57LLtw11sP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-secondary">Tableau</a>
+                <a href="https://drive.google.com/file/d/12IPlolJ5brzkTGLlm7W3einKu6XDloe0/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-secondary">Python</a>
             </div>
-            <div class="box">
-              <div class="topic">Power BI</div>
-              <div class="per">85%</div>
+        </section>
+
+        <section id="contact" class="py-24">
+            <div class="section-card max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-lg mb-8">I'm currently seeking new opportunities and would love to hear from you. Whether you have a question or just want to connect, feel free to reach out!</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                     <a href="mailto:rushikeshpawar197@gmail.com" class="btn-primary text-lg">
+                        <i class="fas fa-envelope mr-2"></i> rushikeshpawar197@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/rushikesh-pawar-261b9215b/" target="_blank" rel="noopener noreferrer" class="text-3xl hover:accent-text transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/rushikeshpawar007" target="_blank" rel="noopener noreferrer" class="text-3xl hover:accent-text transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- My Services Section Start -->
-    <section class="services" id="services">
-      <div class="content">
-        <div class="title"><span>My Projects</span></div>
-        <div class="boxes">
-
-          <div class="box">
-            <div class="icon">
-              <i class="fab fa-python"></i>
-            </div>
-            <a href="https://github.com/rushikeshpawar007/Exploratory-Data-Analysis/blob/main/Pandas_EDA_NBA2019_Part_2.ipynb
-            " target="_blank">
-            <div class="topic">NBA Dataset Analysis
-            </div>
-            <p>
-              Performed Explodatory Analysis on NBA Dataset. Cleaned the data and answered few questions using jupyter notebook.
-            </p></a>
-          </div>
-
-         
-
-         
-
-
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <a href="https://github.com/rushikeshpawar007/SQL/tree/main/project%20join%20us
-            " target="_blank">
-            <div class="topic">Join US
-            </div>
-            <p>
-              Project Join us is all about understanding how SQL queries can be integrated with any webpage. How the data enter can be stored and also displayed
-
-            </p></a>
-          </div>
-
-          <div class="box">
-            <div class="icon">
-              <i class="fab fa-google-play"></i>
-            </div><a href="https://github.com/rushikeshpawar007/Exploratory-Data-Analysis/blob/main/Google_playstore_dataset%20Part%20-%202.ipynb
-            " target="_blank">
-            <div class="topic">Google Store Analysis
-            </div>
-            <p>
-              Performed Explodatory Analysis on Google Store Dataset. Cleaned the data and plotted few graphs using seaborn library.
-            </p></a>
-          </div>
-
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-chart-pie"></i>
-            </div><a href="https://public.tableau.com/app/profile/rushikesh.pawar/viz/PokemonDataset_16312780199080/Dashboard1" target="_blank">
-            <div class="topic">Pokemon Dataset
-            </div>
-            <p>
-              Created a beautiful viz, most of the work in done on the tooltips. One of the best Viz created by me till date.
-
-            </p></a>
-          </div>
-          
-          <div class="box">
-            <div class="icon">
-              <i class="fab fa-instagram"></i>
-            </div><a href="https://github.com/rushikeshpawar007/SQL/tree/main/Instagram%20clone%20project
-            " target="_blank">
-            <div class="topic">Instagram clone
-            </div>
-            <p>
-              Created a database called ig_clone, this database consists of total 7 tables. All tables had different relationship with each other. Performed some analysis and answered few questions.
-
-            </p></a>
-          </div>
-          
-          <div class="box">
-            <div class="icon">
-              <i class="fab fa-spotify"></i>
-            </div><a href="https://public.tableau.com/app/profile/rushikesh.pawar/viz/Spotifychallenge/Dashboard1" target="_blank">
-            <div class="topic">Spotify Dataset
-            </div>
-            <p>
-              Dashboard created using Tableau showcasing different stats, also got a reward for esthetics from Onyx Data.
-
-            </p></a>
-          </div>
-
-         
-
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Contact Me section Start -->
-    <section class="contact-new" id="certifications">
-      <div class="content">
-        <div class="title"><span>My Certifications</span></div>
-        <div class="text">
-          <!-- <div class="topic">Get In Touch!</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-            neque ipsum corrupti dolores, facere numquam voluptate aspernatur
-            sit perferendis qui nisi modi! Recusandae deserunt consequatur
-            voluptatibus alias repellendus nobis eligendi.
-          </p> -->
-          <div id="parent-element">
-            <ul id="parent-ele">
-              <a href="https://drive.google.com/file/d/1zWBZDnMuiKehHhP_uWX7pVWObOEtuwBC/view?usp=sharing" target="_blank"><li id="item-certification">Google Data Analytics</li>
-              <a href="https://drive.google.com/file/d/1WKw3hjShdDCC-Sho-uJq_jn-V8kqP3wq/view?usp=sharing" target="_blank"><li id="item-certification">SQL</li>
-                <a href="https://drive.google.com/file/d/1yTXY2LCsGzr7CBaqN_oQID57LLtw11sP/view?usp=sharing" target="_blank""><li id="item-certification">Tableau</li>
-                  <a href="https://drive.google.com/file/d/12IPlolJ5brzkTGLlm7W3einKu6XDloe0/view?usp=sharing" target="_blank"><li id="item-certification">Python</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="content">
-        <div class="title"><span>Contact</span></div>
-        <div class="text">
-          <!-- <div class="topic">Get In Touch!</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-            neque ipsum corrupti dolores, facere numquam voluptate aspernatur
-            sit perferendis qui nisi modi! Recusandae deserunt consequatur
-            voluptatibus alias repellendus nobis eligendi.
-          </p> -->
-          <div class="button">
-            <a href="mailto:rushikeshpawar197@gmail.com" target="_blank"><button><span id="contact-mail">Mail Me At</span></button></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Section Start -->
-    <footer>
-      <div class="text">
-        <span
-          >Created By Rushikesh | &#169; 2021</span
-        >
-      </div>
+    <footer class="text-center py-8 border-t border-[var(--card-border)]">
+        <p class="text-sm opacity-70">© <span id="copyright-year"></span> Rushikesh Pawar. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
-  </body>
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <i id="modal-close-btn" class="fas fa-times modal-close"></i>
+            <img id="modal-image" src="" alt="Project Image" class="w-full h-64 object-cover rounded-lg mb-6">
+            <h2 id="modal-title" class="text-3xl font-bold mb-4"></h2>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Project Goal</h3>
+            <p id="modal-goal" class="mb-4"></p>
+            <h3 class="text-xl font-bold mb-2">My Role & Actions</h3>
+            <p id="modal-actions" class="mb-6"></p>
+            <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary inline-block">
+                View Project <i class="fas fa-arrow-right-long ml-2"></i>
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- THEME SWITCHER ---
+            const themeToggle = document.getElementById('theme-toggle');
+            
+            // Set initial theme based on localStorage or system preference
+            if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+            });
+            
+            // --- HEADER SCROLL EFFECT ---
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            });
+
+            // --- MOBILE MENU ---
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            mobileMenu.addEventListener('click', (e) => {
+                if(e.target.tagName === 'A') {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+            // --- DYNAMIC DATA INJECTION ---
+            const skills = [
+                { name: 'Power BI', icon: 'powerbi.png' },
+                { name: 'SQL', icon: 'sql.png' },
+                { name: 'Python', icon: 'python.png' },
+                { name: 'Tableau', icon: 'tableau.png' },
+                { name: 'DAX', icon: 'dax.png' },
+                { name: 'Salesforce', icon: 'salesforce.png' },
+                { name: 'n8n', icon: 'n8n.png' },
+                { name: 'AI Agents', icon: 'ai-agents.png' },
+                { name: 'AWS', icon: 'aws.png' },
+                { name: 'Excel', icon: 'excel.png' },
+            ];
+
+            const skillsContainer = document.querySelector('#skills .grid');
+            skillsContainer.innerHTML = skills.map(skill => `
+                <div class="section-card p-6 flex flex-col items-center justify-center gap-4">
+                    <img src="${skill.icon}" alt="${skill.name} logo" class="h-16 w-16 object-contain">
+                    <h4 class="font-semibold text-lg">${skill.name}</h4>
+                </div>
+            `).join('');
+            
+            const projects = [
+                {
+                    id: 'spotify',
+                    title: 'Spotify Dashboard Analysis',
+                    image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=800',
+                    tags: ['Tableau', 'Data Visualization', 'UI/UX Design'],
+                    goal: "To analyze a Spotify dataset and create a visually compelling dashboard that tells a clear story about music trends, for a data visualization competition.",
+                    actions: "I performed data cleaning and exploration, then focused on designing an intuitive and aesthetically pleasing dashboard in Tableau. I paid special attention to tooltip design and color theory to guide the user's eye and make complex data easily understandable.",
+                    link: "https://public.tableau.com/app/profile/rushikesh.pawar/viz/Spotifychallenge/Dashboard1",
+                    linkText: "View on Tableau"
+                },
+                {
+                    id: 'aifinancebot',
+                    title: 'AI Finance Bot',
+                    image: 'https://images.unsplash.com/photo-1555949963-ff98c872d26d?auto=format&fit=crop&q=80&w=800',
+                    tags: ['Generative AI', 'n8n', 'Power BI', 'API Integration'],
+                    goal: "To provide leadership with instant answers to recurring financial questions, bypassing the need to navigate complex BI dashboards for simple queries.",
+                    actions: "I engineered an intelligent bot using n8n and Generative AI. The workflow automates the retrieval of visual data snippets from Power BI via an API and delivers instant, conversational answers to user prompts, effectively creating a natural language interface for our financial data.",
+                    link: "https://github.com/rushikeshpawar007", // Placeholder link
+                    linkText: "View on GitHub"
+                },
+                {
+                    id: 'instagram',
+                    title: 'Instagram Clone Database',
+                    image: 'https://images.unsplash.com/photo-1522252234503-e356532cafd5?auto=format&fit=crop&q=80&w=800',
+                    tags: ['SQL', 'Database Design', 'Data Analysis'],
+                    goal: "To design and implement a relational database schema for a simplified Instagram clone, and then query it to answer key business questions about user engagement.",
+                    actions: "I designed a schema with 7 interconnected tables (users, photos, comments, etc.). I then populated the database with mock data and wrote a series of complex SQL queries to find insights, such as identifying the most popular photos and the most loyal users.",
+                    link: "https://github.com/rushikeshpawar007/SQL/tree/main/Instagram%20clone%20project",
+                    linkText: "View on GitHub"
+                },
+                {
+                    id: 'pokemon',
+                    title: 'Interactive Pokémon Viz',
+                    image: 'https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?auto=format&fit=crop&q=80&w=800',
+                    tags: ['Tableau', 'Data Storytelling', 'Advanced Tooltips'],
+                    goal: "To create a highly interactive and detailed Tableau visualization using a comprehensive Pokémon dataset, focusing on delivering rich information through user interaction.",
+                    actions: "This project was an exercise in advanced Tableau techniques. Most of the work was dedicated to crafting detailed, multi-layered tooltips that reveal Pokémon stats, evolutions, and types on hover, creating a 'Pokédex-like' experience within the dashboard.",
+                    link: "https://public.tableau.com/app/profile/rushikesh.pawar/viz/PokemonDataset_16312780199080/Dashboard1",
+                    linkText: "View on Tableau"
+                },
+                {
+                    id: 'nba',
+                    title: 'NBA Player Data Analysis',
+                    image: 'https://images.unsplash.com/photo-1556168505-d00e911d52eb?auto=format&fit=crop&q=80&w=800',
+                    tags: ['Python', 'Pandas', 'Jupyter', 'EDA'],
+                    goal: "To conduct an exploratory data analysis (EDA) on an NBA player dataset to uncover patterns and answer specific questions about player performance and statistics.",
+                    actions: "Using Python with the Pandas library in a Jupyter Notebook, I cleaned the dataset by handling missing values and incorrect data types. I then performed statistical analysis and created basic visualizations to answer questions about player efficiency, scoring, and other key metrics.",
+                    link: "https://github.com/rushikeshpawar007/Exploratory-Data-Analysis/blob/main/Pandas_EDA_NBA2019_Part_2.ipynb",
+                    linkText: "View on GitHub"
+                },
+                 {
+                    id: 'joinus',
+                    title: 'Web & SQL Integration',
+                    image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=800',
+                    tags: ['SQL', 'Node.js', 'Web Development'],
+                    goal: "To understand and demonstrate how a front-end web application can interact with a back-end SQL database to capture and display user data.",
+                    actions: "This proof-of-concept project involved creating a simple webpage with a sign-up form. I used Node.js as a simple backend to take the form data and execute SQL queries to insert it into a database. The app also displayed the total number of sign-ups by querying the database.",
+                    link: "https://github.com/rushikeshpawar007/SQL/tree/main/project%20join%20us",
+                    linkText: "View on GitHub"
+                }
+            ];
+
+            const projectGrid = document.getElementById('project-grid');
+            projectGrid.innerHTML = projects.map(p => `
+                <div class="section-card flex flex-col">
+                    <img src="${p.image}" alt="${p.title}" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">${p.title}</h3>
+                    <div class="flex-grow mb-4">
+                       ${p.tags.map(tag => `<span class="inline-block bg-[var(--bg-color)] text-sm font-semibold mr-2 mb-2 px-3 py-1 rounded-full">${tag}</span>`).join('')}
+                    </div>
+                    <button class="btn-primary mt-auto w-full view-details-btn" data-project-id="${p.id}">View Details</button>
+                </div>
+            `).join('');
+
+            // --- MODAL LOGIC ---
+            const modal = document.getElementById('project-modal');
+            const modalImage = document.getElementById('modal-image');
+            const modalTitle = document.getElementById('modal-title');
+            const modalTags = document.getElementById('modal-tags');
+            const modalGoal = document.getElementById('modal-goal');
+            const modalActions = document.getElementById('modal-actions');
+            const modalLink = document.getElementById('modal-link');
+            const closeModalBtn = document.getElementById('modal-close-btn');
+
+            document.querySelectorAll('.view-details-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const projectId = btn.dataset.projectId;
+                    const project = projects.find(p => p.id === projectId);
+                    
+                    modalImage.src = project.image;
+                    modalTitle.textContent = project.title;
+                    modalTags.innerHTML = project.tags.map(tag => `<span class="inline-block bg-[var(--bg-color)] text-sm font-semibold mr-2 mb-2 px-3 py-1 rounded-full">${tag}</span>`).join('');
+                    modalGoal.textContent = project.goal;
+                    modalActions.innerHTML = project.actions; // Use innerHTML to render <strong> tags if any
+                    modalLink.href = project.link;
+                    modalLink.innerHTML = `${project.linkText} <i class="fas fa-arrow-right-long ml-2"></i>`;
+
+                    modal.classList.add('active');
+                });
+            });
+
+            const closeModal = () => modal.classList.remove('active');
+            closeModalBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // --- FOOTER YEAR ---
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        });
+    </script>
+
+</body>
 </html>
